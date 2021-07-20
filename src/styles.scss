@@ -9,12 +9,13 @@
 #app {
   --background: #1E252F;
   --white: #FFFFFF;
-  --lightgrey: rgb(245, 245, 245);
+  --lightgrey: #6a7a95;
   --darkgrey: grey;
   --violet: #8475E1;
+  --outline: #343945;
+  --green: #7adfbd;
 }
 
 html, body, #app {
   min-height: 100% !important;
-  background-color: var(--background);
 }

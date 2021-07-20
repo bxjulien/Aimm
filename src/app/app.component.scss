@@ -1,5 +1,72 @@
 #home {
+  position: relative;
+  overflow: hidden;
   height: 100vh;
   background-color: var(--background);
-  padding: 0 20rem;
+  padding: 0 15rem;
+  display: flex;
+  flex-direction: column;
+
+  app-navbar {
+    height: 20vh;
+  }
+
+  app-header {
+    height: 50vh;
+  }
+
+  #astronaut {
+    z-index: 10;
+    position: absolute;
+    height: 85%;
+    right: 5%;
+  }
+
+  .circle-exter {
+    position: absolute;
+    height: 60rem;
+    width: 130rem;
+    right: -8rem;
+    bottom: -5rem;
+    background-color: transparent;
+    border: 1px solid var(--outline);
+    border-radius: 500px;
+  }
+
+  .circle-inter {
+    position: absolute;
+    height: 34rem;
+    width: 37rem;
+    right: 9rem;
+    bottom: 9rem;
+    background-color: transparent;
+    border: 1px solid var(--outline);
+    border-radius: 500px;
+  }
+
+  .dot {
+    position: absolute;
+    height: 20rem;
+    width: 20rem;
+    right: 16rem;
+    bottom: 13rem;
+    border: 1px solid var(--outline);
+    border-radius: 500px;
+    background: linear-gradient(8deg, #74b9c4 0%, #aea5c3 50%, #ce95c3 100%);
+  }
+
+  .cards {
+    height: 30vh;
+    display: flex;
+    align-items: center;
+
+    app-card {
+      padding: 0 4rem;
+
+      &:nth-child(1) {
+        border-right: 1px solid var(--outline);
+        padding-left: 0;
+      }
+    }
+  }
 }

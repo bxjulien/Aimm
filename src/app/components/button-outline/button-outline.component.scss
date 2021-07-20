@@ -8,6 +8,15 @@
   height: 50px;
   border-radius: 50px;
   background: transparent;
-  color: var(--white);
-  border: 1px solid var(--lightgrey);
+  color: var(--green);
+  border: 1px solid var(--outline);
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  img {
+    height: 30%;
+    margin-right: .4rem;
+  }
 }

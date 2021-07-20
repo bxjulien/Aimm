@@ -3,7 +3,7 @@
     font-size: 5.5rem;
     color: var(--white);
     span {
-      background: linear-gradient(153deg, rgba(237,231,0,1) 0%, rgba(255,132,0,1) 50%, rgba(101,0,215,1) 100%);
+      background: linear-gradient(153deg, #fbe3a5 0%, #da8492 50%,#9391ff 100%);
       -webkit-background-clip: text;
       -webkit-text-fill-color: transparent;
     }
@@ -12,10 +12,14 @@
   p {
     font-size: 1.5rem;
     color: var(--lightgrey);
+    margin: 2rem 0;
   }
 
   .buttons {
+    display: flex;
+
     .basic-button {
+      margin-right: 2rem;
       cursor: pointer;
       display: flex;
       justify-content: center;

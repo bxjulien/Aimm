@@ -1,1 +1,12 @@
-<p>card works!</p>
+<div class="card">
+    <div class="left">
+        <div class="icon-outline">
+            <img *ngIf="iconPath && iconAlt" [src]="iconPath" [alt]="iconAlt">
+        </div>
+    </div>
+
+    <div class="right">
+        <span class="title">Prebuilt templates</span>
+        <p class="description">{{description}}</p>
+    </div>
+</div>

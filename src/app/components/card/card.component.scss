@@ -1,0 +1,34 @@
+.card {
+    display: flex;
+    width: 20rem;
+    .left {
+        width: 20%;
+        .icon-outline {
+            height: 45px;
+            width: 45px;
+            border: 1px solid var(--outline);
+            border-radius: 50%;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+
+            img {
+                height: 1.8rem;
+            }
+        }
+    }
+
+    .right {
+        width: 80%;
+
+        .title {
+            font-size: 1.5rem;
+            color: var(--white);
+            margin-bottom: 1rem !important;
+        }
+
+        .description {
+            color: var(--lightgrey);
+        }
+    }
+}

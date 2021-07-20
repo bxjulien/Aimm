@@ -1,4 +1,4 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, Input, OnInit } from '@angular/core';
 
 @Component({
   selector: 'app-button-outline',
@@ -7,8 +7,9 @@ import { Component, OnInit } from '@angular/core';
 })
 export class ButtonOutlineComponent implements OnInit {
 
-
-  text = "bonjour"
+  @Input() text;
+  @Input() iconPath;
+  @Input() iconAlt;
 
   constructor() { }
 

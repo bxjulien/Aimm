@@ -1,0 +1,13 @@
+.button-outline {
+  cursor: pointer;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  width: 150px;
+  height: 50px;
+  border-radius: 50px;
+  background: transparent;
+  color: var(--white);
+  border: 1px solid var(--lightgrey);
+}

@@ -3,7 +3,11 @@
   align-items: baseline;
   padding: 2rem 0;
 
-  .left {
+  .mobile {
+    display: none;
+  }
+
+  .left, .mobile {
     width: 20%;
 
     .typo {
@@ -37,5 +41,27 @@
     width: 40%;
     display: flex;
     justify-content: flex-end;
+  }
+
+  @media only screen and (max-width: 320px) {
+    
+    .left, .middle, .right {
+      display: none;
+    }
+
+    .mobile {
+      display: flex;
+      width: 100%;
+      justify-content: space-between;
+      align-items: center;
+
+      .typo {
+        font-size: 1.2rem;
+      }
+
+      img {
+        height: 1.8rem;
+      }
+    }
   }
 }

@@ -3,7 +3,7 @@
     font-size: 5.5rem;
     color: var(--white);
     span {
-      background: linear-gradient(153deg, #fbe3a5 0%, #da8492 50%,#9391ff 100%);
+      background: linear-gradient(153deg, #fbe3a5 0%, #da8492 50%, #9391ff 100%);
       -webkit-background-clip: text;
       -webkit-text-fill-color: transparent;
     }
@@ -30,6 +30,30 @@
       border-radius: 50px;
       background: var(--violet);
       color: var(--white);
+    }
+  }
+
+  @media only screen and (max-width: 320px) {
+    h1 {
+      font-size: 2.8rem;
+    }
+
+    p {
+      font-size: 0.8rem;
+      margin: 1rem 0;
+    }
+
+    .buttons {
+      .basic-button {
+        margin-right: 1rem;
+        width: 120px;
+        height: 40px;
+        border-radius: 50px;
+
+        span {
+          font-size: 0.8rem;
+        }
+      }
     }
   }
 }
